@@ -67,7 +67,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets app management package family names to launch after log on.
-        /// List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.​
+        /// List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "appManagementPackageFamilyNamesToLaunchAfterLogOn", Required = Newtonsoft.Json.Required.Default)]
         public IEnumerable<string> AppManagementPackageFamilyNamesToLaunchAfterLogOn { get; set; }
@@ -277,7 +277,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets defender detected malware actions.
-        /// Gets or sets Defender’s actions to take on detected Malware per threat level.
+        /// Gets or sets Defender?s actions to take on detected Malware per threat level.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "defenderDetectedMalwareActions", Required = Newtonsoft.Json.Required.Default)]
         public DefenderDetectedMalwareActions DefenderDetectedMalwareActions { get; set; }
@@ -319,14 +319,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets defender potentially unwanted app action.
-        /// Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: deviceDefault, block, audit.
+        /// Gets or sets Defender?s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: deviceDefault, block, audit.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "defenderPotentiallyUnwantedAppAction", Required = Newtonsoft.Json.Required.Default)]
         public DefenderPotentiallyUnwantedAppAction? DefenderPotentiallyUnwantedAppAction { get; set; }
     
         /// <summary>
         /// Gets or sets defender potentially unwanted app action setting.
-        /// Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: userDefined, enable, auditMode, warn, notConfigured.
+        /// Gets or sets Defender?s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: userDefined, enable, auditMode, warn, notConfigured.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "defenderPotentiallyUnwantedAppActionSetting", Required = Newtonsoft.Json.Required.Default)]
         public DefenderProtectionType? DefenderPotentiallyUnwantedAppActionSetting { get; set; }
@@ -1082,7 +1082,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets network proxy apply settings device wide.
-        /// If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.
+        /// If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that?s enrolled into MDM.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "networkProxyApplySettingsDeviceWide", Required = Newtonsoft.Json.Required.Default)]
         public bool? NetworkProxyApplySettingsDeviceWide { get; set; }
@@ -1327,7 +1327,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets privacy disable launch experience.
-        /// This policy prevents the privacy experience from launching during user logon for new and upgraded users.​
+        /// This policy prevents the privacy experience from launching during user logon for new and upgraded users.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "privacyDisableLaunchExperience", Required = Newtonsoft.Json.Required.Default)]
         public bool? PrivacyDisableLaunchExperience { get; set; }
@@ -1418,7 +1418,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets search enable remote queries.
-        /// Indicates whether or not to block remote queries of this computer’s index.
+        /// Indicates whether or not to block remote queries of this computer?s index.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "searchEnableRemoteQueries", Required = Newtonsoft.Json.Required.Default)]
         public bool? SearchEnableRemoteQueries { get; set; }
@@ -1929,7 +1929,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets windows spotlight block tailored experiences.
-        /// Block personalized content in Windows spotlight based on user’s device usage.
+        /// Block personalized content in Windows spotlight based on user?s device usage.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "windowsSpotlightBlockTailoredExperiences", Required = Newtonsoft.Json.Required.Default)]
         public bool? WindowsSpotlightBlockTailoredExperiences { get; set; }

@@ -60,7 +60,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets confidence.
-        /// An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 – 100 with 100 being the highest.
+        /// An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 ? 100 with 100 being the highest.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "confidence", Required = Newtonsoft.Json.Required.Default)]
         public Int32? Confidence { get; set; }
@@ -148,7 +148,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets external id.
-        /// An identification number that ties the indicator back to the indicator provider’s system (e.g. a foreign key).
+        /// An identification number that ties the indicator back to the indicator provider?s system (e.g. a foreign key).
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "externalId", Required = Newtonsoft.Json.Required.Default)]
         public string ExternalId { get; set; }
@@ -222,14 +222,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets is active.
-        /// Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to ‘False’ to deactivate indicators in the system.
+        /// Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to ?False? to deactivate indicators in the system.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "isActive", Required = Newtonsoft.Json.Required.Default)]
         public bool? IsActive { get; set; }
     
         /// <summary>
         /// Gets or sets kill chain.
-        /// A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ‘killChain values’ below for exact values.
+        /// A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ?killChain values? below for exact values.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "killChain", Required = Newtonsoft.Json.Required.Default)]
         public IEnumerable<string> KillChain { get; set; }
@@ -347,14 +347,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets passive only.
-        /// Determines if the indicator should trigger an event that is visible to an end-user. When set to ‘true,’ security tools will not notify the end user that a ‘hit’ has occurred. This is most often treated as audit or silent mode by security products where they will simply log that a match occurred but will not perform the action. Default value is false.
+        /// Determines if the indicator should trigger an event that is visible to an end-user. When set to ?true,? security tools will not notify the end user that a ?hit? has occurred. This is most often treated as audit or silent mode by security products where they will simply log that a match occurred but will not perform the action. Default value is false.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "passiveOnly", Required = Newtonsoft.Json.Required.Default)]
         public bool? PassiveOnly { get; set; }
     
         /// <summary>
         /// Gets or sets severity.
-        /// An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 – 5 where 5 is the most severe and zero is not severe at all. Default value is 3.
+        /// An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 ? 5 where 5 is the most severe and zero is not severe at all. Default value is 3.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "severity", Required = Newtonsoft.Json.Required.Default)]
         public Int32? Severity { get; set; }

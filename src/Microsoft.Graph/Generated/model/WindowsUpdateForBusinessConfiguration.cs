@@ -263,14 +263,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets user pause access.
-        /// Specifies whether to enable end user’s access to pause software updates. Possible values are: notConfigured, enabled, disabled.
+        /// Specifies whether to enable end user?s access to pause software updates. Possible values are: notConfigured, enabled, disabled.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "userPauseAccess", Required = Newtonsoft.Json.Required.Default)]
         public Enablement? UserPauseAccess { get; set; }
     
         /// <summary>
         /// Gets or sets user windows update scan access.
-        /// Specifies whether to disable user’s access to scan Windows Update. Possible values are: notConfigured, enabled, disabled.
+        /// Specifies whether to disable user?s access to scan Windows Update. Possible values are: notConfigured, enabled, disabled.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "userWindowsUpdateScanAccess", Required = Newtonsoft.Json.Required.Default)]
         public Enablement? UserWindowsUpdateScanAccess { get; set; }

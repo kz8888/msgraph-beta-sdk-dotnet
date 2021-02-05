@@ -88,7 +88,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets codeRequirement.
-        /// Enter the code requirement, which can be obtained with the command 'codesign –display -r –' in the Terminal app. Include everything after '=&amp;gt;'.
+        /// Enter the code requirement, which can be obtained with the command 'codesign ?display -r ?' in the Terminal app. Include everything after '=&amp;gt;'.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "codeRequirement", Required = Newtonsoft.Json.Required.Default)]
         public string CodeRequirement { get; set; }
@@ -102,7 +102,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets fileProviderPresence.
-        /// Allow the app or process to access files managed by another app’s file provider extension. Requires macOS 10.15 or later. . Possible values are: notConfigured, enabled, disabled.
+        /// Allow the app or process to access files managed by another app?s file provider extension. Requires macOS 10.15 or later. . Possible values are: notConfigured, enabled, disabled.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "fileProviderPresence", Required = Newtonsoft.Json.Required.Default)]
         public Enablement? FileProviderPresence { get; set; }

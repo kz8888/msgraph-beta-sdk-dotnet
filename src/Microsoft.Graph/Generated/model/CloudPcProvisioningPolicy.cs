@@ -46,7 +46,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets image display name.
-        /// The display name for the OS image you’re provisioning.
+        /// The display name for the OS image you?re provisioning.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "imageDisplayName", Required = Newtonsoft.Json.Required.Default)]
         public string ImageDisplayName { get; set; }
@@ -67,7 +67,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets on premises connection id.
-        /// The ID of the cloudPcOnPremisesConnection. To ensure that cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the cloud PC service.
+        /// The ID of the cloudPcOnPremisesConnection. To ensure that cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that?s validated by the cloud PC service.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "onPremisesConnectionId", Required = Newtonsoft.Json.Required.Default)]
         public string OnPremisesConnectionId { get; set; }

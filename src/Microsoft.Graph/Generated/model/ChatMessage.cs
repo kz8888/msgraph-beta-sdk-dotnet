@@ -32,7 +32,7 @@ namespace Microsoft.Graph
 	
         /// <summary>
         /// Gets or sets attachments.
-        /// Attached files. Attachments are currently read-only – sending attachments is not supported.
+        /// Attached files. Attachments are currently read-only ? sending attachments is not supported.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "attachments", Required = Newtonsoft.Json.Required.Default)]
         public IEnumerable<ChatMessageAttachment> Attachments { get; set; }

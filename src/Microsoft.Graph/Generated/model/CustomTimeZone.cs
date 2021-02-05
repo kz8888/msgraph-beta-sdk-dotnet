@@ -31,7 +31,7 @@ namespace Microsoft.Graph
 
         /// <summary>
         /// Gets or sets bias.
-        /// The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes. Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.
+        /// The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes.?Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "bias", Required = Newtonsoft.Json.Required.Default)]
         public Int32? Bias { get; set; }

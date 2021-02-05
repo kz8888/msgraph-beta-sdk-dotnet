@@ -53,14 +53,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets authentication type.
-        /// Specify whether to authenticate the user, the device, either, or to use guest authentication (none). If you’re using certificate authentication, make sure the certificate type matches the authentication type. Possible values are: none, user, machine, machineOrUser, guest.
+        /// Specify whether to authenticate the user, the device, either, or to use guest authentication (none). If you?re using certificate authentication, make sure the certificate type matches the authentication type. Possible values are: none, user, machine, machineOrUser, guest.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "authenticationType", Required = Newtonsoft.Json.Required.Default)]
         public WifiAuthenticationType? AuthenticationType { get; set; }
     
         /// <summary>
         /// Gets or sets cache credentials.
-        /// Specify whether to cache user credentials on the device so that users don’t need to keep entering them each time they connect.
+        /// Specify whether to cache user credentials on the device so that users don?t need to keep entering them each time they connect.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "cacheCredentials", Required = Newtonsoft.Json.Required.Default)]
         public bool? CacheCredentials { get; set; }
@@ -193,7 +193,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets user based virtual lan.
-        /// Specifiy whether to change the virtual LAN used by the device based on the user’s credentials. Cannot be used when NetworkSingleSignOnType is set to ​Disabled.
+        /// Specifiy whether to change the virtual LAN used by the device based on the user?s credentials. Cannot be used when NetworkSingleSignOnType is set to Disabled.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "userBasedVirtualLan", Required = Newtonsoft.Json.Required.Default)]
         public bool? UserBasedVirtualLan { get; set; }

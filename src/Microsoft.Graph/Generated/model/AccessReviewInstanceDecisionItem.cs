@@ -95,7 +95,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets target.
-        /// The target of this specific decision. Decision targets can be of different types – each one with its own specific properties. See accessReviewInstanceDecisionItemTarget.
+        /// The target of this specific decision. Decision targets can be of different types ? each one with its own specific properties. See accessReviewInstanceDecisionItemTarget.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "target", Required = Newtonsoft.Json.Required.Default)]
         public AccessReviewInstanceDecisionItemTarget Target { get; set; }

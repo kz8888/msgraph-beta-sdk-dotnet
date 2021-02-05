@@ -32,7 +32,7 @@ namespace Microsoft.Graph
 
         /// <summary>
         /// Gets or sets addImageQuery.
-        /// Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+        /// Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example ? a high contrast image
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "addImageQuery", Required = Newtonsoft.Json.Required.Default)]
         public bool? AddImageQuery { get; set; }

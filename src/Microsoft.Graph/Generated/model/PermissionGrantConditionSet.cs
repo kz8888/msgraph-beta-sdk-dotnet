@@ -74,7 +74,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets permission type.
-        /// The permission type of the permission being granted. Possible values: application for application permissions (e.g. app roles) or delegated for delegated permissions. The value delegatedUserConsentable indicates delegated permissions which have not been configured by the API publisher to require admin consent—this value may be used in built-in permission grant policies, but cannot be used in custom permission grant policies. Required.
+        /// The permission type of the permission being granted. Possible values: application for application permissions (e.g. app roles) or delegated for delegated permissions. The value delegatedUserConsentable indicates delegated permissions which have not been configured by the API publisher to require admin consent?this value may be used in built-in permission grant policies, but cannot be used in custom permission grant policies. Required.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "permissionType", Required = Newtonsoft.Json.Required.Default)]
         public PermissionType? PermissionType { get; set; }

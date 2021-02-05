@@ -31,6 +31,13 @@ namespace Microsoft.Graph
         }
 	
         /// <summary>
+        /// Gets or sets application guard allow camera microphone redirection.
+        /// Gets or sets whether applications inside Microsoft Defender Application Guard can access the device?s camera and microphone.
+        /// </summary>
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "applicationGuardAllowCameraMicrophoneRedirection", Required = Newtonsoft.Json.Required.Default)]
+        public bool? ApplicationGuardAllowCameraMicrophoneRedirection { get; set; }
+    
+        /// <summary>
         /// Gets or sets application guard allow file save on host.
         /// Allow users to download files from Edge in the application guard container and save them on the host file system
         /// </summary>
@@ -99,6 +106,13 @@ namespace Microsoft.Graph
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "applicationGuardBlockNonEnterpriseContent", Required = Newtonsoft.Json.Required.Default)]
         public bool? ApplicationGuardBlockNonEnterpriseContent { get; set; }
+    
+        /// <summary>
+        /// Gets or sets application guard certificate thumbprints.
+        /// Allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.
+        /// </summary>
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "applicationGuardCertificateThumbprints", Required = Newtonsoft.Json.Required.Default)]
+        public IEnumerable<string> ApplicationGuardCertificateThumbprints { get; set; }
     
         /// <summary>
         /// Gets or sets application guard enabled.
@@ -295,6 +309,13 @@ namespace Microsoft.Graph
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "defenderBlockEndUserAccess", Required = Newtonsoft.Json.Required.Default)]
         public bool? DefenderBlockEndUserAccess { get; set; }
+    
+        /// <summary>
+        /// Gets or sets defender block persistence through wmi type.
+        /// Value indicating the behavior of Block persistence through WMI event subscription
+        /// </summary>
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "defenderBlockPersistenceThroughWmiType", Required = Newtonsoft.Json.Required.Default)]
+        public DefenderAttackSurfaceType? DefenderBlockPersistenceThroughWmiType { get; set; }
     
         /// <summary>
         /// Gets or sets defender check for signatures before running scan.
@@ -529,14 +550,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets defender office apps other process injection.
-        /// Value indicating the behavior of  Office applications injecting into other processes. Possible values are: userDefined, enable, auditMode, warn, notConfigured.
+        /// Value indicating the behavior of? Office applications injecting into other processes. Possible values are: userDefined, enable, auditMode, warn, notConfigured.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "defenderOfficeAppsOtherProcessInjection", Required = Newtonsoft.Json.Required.Default)]
         public DefenderProtectionType? DefenderOfficeAppsOtherProcessInjection { get; set; }
     
         /// <summary>
         /// Gets or sets defender office apps other process injection type.
-        /// Value indicating the behavior of Office applications injecting into other processes. Possible values are: userDefined, block, auditMode, warn, disable.
+        /// Value indicating the behavior of?Office applications injecting into other processes. Possible values are: userDefined, block, auditMode, warn, disable.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "defenderOfficeAppsOtherProcessInjectionType", Required = Newtonsoft.Json.Required.Default)]
         public DefenderAttackSurfaceType? DefenderOfficeAppsOtherProcessInjectionType { get; set; }
@@ -1187,7 +1208,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets local security options do not store lanmanager hash value on next password change.
-        /// This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. It’s not stored by default.
+        /// This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. It?s not stored by default.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange", Required = Newtonsoft.Json.Required.Default)]
         public bool? LocalSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange { get; set; }
@@ -1215,7 +1236,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets local security options hide username at sign in.
-        /// Do not display the username of the person signing in to this device after credentials are entered and before the device’s desktop is shown.
+        /// Do not display the username of the person signing in to this device after credentials are entered and before the device?s desktop is shown.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "localSecurityOptionsHideUsernameAtSignIn", Required = Newtonsoft.Json.Required.Default)]
         public bool? LocalSecurityOptionsHideUsernameAtSignIn { get; set; }
@@ -1250,14 +1271,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets local security options machine inactivity limit.
-        /// Define maximum minutes of inactivity on the interactive desktop’s login screen until the screen saver runs. Valid values 0 to 9999
+        /// Define maximum minutes of inactivity on the interactive desktop?s login screen until the screen saver runs. Valid values 0 to 9999
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "localSecurityOptionsMachineInactivityLimit", Required = Newtonsoft.Json.Required.Default)]
         public Int32? LocalSecurityOptionsMachineInactivityLimit { get; set; }
     
         /// <summary>
         /// Gets or sets local security options machine inactivity limit in minutes.
-        /// Define maximum minutes of inactivity on the interactive desktop’s login screen until the screen saver runs. Valid values 0 to 9999
+        /// Define maximum minutes of inactivity on the interactive desktop?s login screen until the screen saver runs. Valid values 0 to 9999
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "localSecurityOptionsMachineInactivityLimitInMinutes", Required = Newtonsoft.Json.Required.Default)]
         public Int32? LocalSecurityOptionsMachineInactivityLimitInMinutes { get; set; }

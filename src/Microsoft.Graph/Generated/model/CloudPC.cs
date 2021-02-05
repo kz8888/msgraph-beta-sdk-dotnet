@@ -53,14 +53,14 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets managed device id.
-        /// The cloud PC’s Intune device ID.
+        /// The cloud PC?s Intune device ID.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "managedDeviceId", Required = Newtonsoft.Json.Required.Default)]
         public string ManagedDeviceId { get; set; }
     
         /// <summary>
         /// Gets or sets managed device name.
-        /// The cloud PC’s Intune device name.
+        /// The cloud PC?s Intune device name.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "managedDeviceName", Required = Newtonsoft.Json.Required.Default)]
         public string ManagedDeviceName { get; set; }

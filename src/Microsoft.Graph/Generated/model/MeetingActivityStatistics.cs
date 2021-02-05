@@ -39,7 +39,7 @@ namespace Microsoft.Graph
     
         /// <summary>
         /// Gets or sets conflicting.
-        /// Time spent in conflicting meetings (meetings that overlap with other meetings that the person accepted and where the person’s status is set to Busy). The value is represented in ISO 8601 format for durations.
+        /// Time spent in conflicting meetings (meetings that overlap with other meetings that the person accepted and where the person?s status is set to Busy). The value is represented in ISO 8601 format for durations.
         /// </summary>
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, PropertyName = "conflicting", Required = Newtonsoft.Json.Required.Default)]
         public Duration Conflicting { get; set; }
